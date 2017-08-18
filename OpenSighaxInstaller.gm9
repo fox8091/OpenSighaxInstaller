@@ -1,0 +1,23 @@
+# OpenInstaller script
+# last changed: 20170808
+# author: MassExplosion213
+
+set SUCCESSMSG "FIRM copied successfully"
+set INSTALLPATH 0:/install.firm
+set INSTALLSHA 0:/install.firm.sha
+
+set ERRMSG "FIRM not found. \nDoes install.firm exist?"
+find $[INSTALLPATH] NULL
+set ERRMSG "SHA not found. \nDoes install.sha exist?"
+find $[INSTALLSHA] NULL
+set ERRMSG "FIRM verification failed. \nIs this a valid FIRM?"
+verify $[INSTALLPATH]
+set ERRMSG "FIRM SHA mismatch. \n\nPlease verify your files and try \nagain."
+sha $[INSTALLPATH] $[INSTALLSHA]
+
+ask "This will copy install.bin from your\nSD to your NAND.\n\nContinue?"
+
+allow S:/
+
+# copy specific files over
+cp $[INSTALLPATH] S:/firm0.bin
