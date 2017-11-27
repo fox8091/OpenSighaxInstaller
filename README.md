@@ -1,4 +1,4 @@
-[![License (MIT)](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)]()
+[![License (MIT)](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://github.com/fox8091/OpenSighaxInstaller/blob/master/LICENSE)
 
 # OpenSighaxInstaller
 _A small firmware installer script for GodMode9_
