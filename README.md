@@ -1,3 +1,5 @@
+[![License (MIT)](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)]()
+
 # OpenSighaxInstaller
 _A small firmware installer script for GodMode9_
 
@@ -12,9 +14,6 @@ of it.
 ## Usage
 Copy the script to `SD:/gm9/scripts/OpenSighaxInstaller.gm9`. Run from GodMode9
 script menu.
-
-## Licensing
-This project is licenced under the MIT licence, contained in LICENCE.
 
 ## Credits
 d0k3 for GodMode9
